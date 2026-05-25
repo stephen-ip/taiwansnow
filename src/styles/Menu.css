@@ -1,74 +1,86 @@
 #menu {
-  background: linear-gradient(180deg, #fff6e6, #ffe8b8);
-  padding: 0 20px 100px;
+  background: #fffaf1;
+  padding: 96px 0;
 }
 
 #menu h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 3rem;
-  color: #5c2e00;
-  text-align: center;
-  margin-bottom: 60px;
-  letter-spacing: 1px;
+  color: #2d1f16;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-weight: 900;
+  margin-bottom: 34px;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .menu-item {
+  background: #ffffff;
+  border: 1px solid rgba(70, 43, 22, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(45, 31, 22, 0.08);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  max-width: 900px;
-  margin: 60px auto;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .menu-image img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  aspect-ratio: 4 / 3;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
 }
 
 .menu-info {
-  max-width: 400px;
+  padding: 22px;
+}
+
+.menu-tag {
+  color: #b94d5f;
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .menu-info h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  color: #5c2e00;
-  margin-bottom: 15px;
+  color: #2d1f16;
+  font-size: 1.45rem;
+  margin-bottom: 12px;
 }
 
 .menu-info p {
-  font-family: "Poppins", sans-serif;
-  color: #7a3e00;
+  color: #6b5442;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin: 0;
 }
 
 @media (max-width: 900px) {
-  .menu-item {
-    flex-direction: column;
-    text-align: center;
-    gap: 24px;
+  .menu-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
+  #menu {
+    padding: 72px 0;
+  }
+
   #menu h2 {
-    font-size: 1.6rem;
-    text-align: center;
+    font-size: 2.3rem;
   }
 
   .menu-info h3 {
     font-size: 1.4rem;
-    text-align: center;
   }
 
   .menu-info p {
     font-size: 1rem;
     line-height: 1.6;
-    text-align: center;
   }
 }

@@ -1,39 +1,87 @@
 .about {
-  min-height: 100vh;
-  background: linear-gradient(180deg, #fff2d6 0%, #fff6e6 100%);
-  padding: 100px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background: #ffffff;
+  border-block: 1px solid rgba(70, 43, 22, 0.08);
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 52px;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 96px 0;
 }
 
-.about h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.8rem;
-  color: #5c2e00;
-  margin-bottom: 25px;
+.about-copy {
+  border-left: 3px solid #0f766e;
+  padding-left: 20px;
+}
+
+.about-lede {
+  color: #2d1f16;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 620px;
 }
 
 .about p {
-  font-family: "Poppins", sans-serif;
   max-width: 700px;
-  margin: 0 auto 18px;
+  margin: 0 0 18px;
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #7a3e00;
+  color: #6b5442;
+}
+
+.about-lede + p {
+  margin-top: 4px;
+}
+
+.about-highlights {
+  display: grid;
+  gap: 12px;
+  padding-right: 20px;
+}
+
+.about-highlights div {
+  background: #fffaf1;
+  border: 1px solid rgba(70, 43, 22, 0.1);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.about-highlights strong {
+  color: #2d1f16;
+  display: block;
+  font-size: 1.08rem;
+  margin-bottom: 4px;
+}
+
+.about-highlights span {
+  color: #6b5442;
 }
 
 @media (max-width: 768px) {
-  .about h2 {
-    font-size: 1.6rem;
-    text-align: center;
+  .about {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 72px 20px;
+  }
+
+  .about-copy,
+  .about-highlights {
+    padding: 0;
+  }
+
+  .about-copy {
+    border-left: 0;
+    padding-left: 0;
   }
 
   .about p {
     font-size: 1rem;
     line-height: 1.6;
-    text-align: center;
+  }
+
+  .about-lede {
+    font-size: 1.08rem;
   }
 }

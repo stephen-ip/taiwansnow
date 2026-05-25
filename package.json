@@ -20,10 +20,12 @@
     "@types/react-dom": "^19.2.3",
     "astro": "^6.3.7",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6",
-    "wrangler": "^4.94.0"
+    "react-dom": "^19.2.6"
   },
   "overrides": {
     "vite": "^7"
+  },
+  "devDependencies": {
+    "wrangler": "^4.94.0"
   }
 }

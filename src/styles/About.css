@@ -1,13 +1,17 @@
-.about {
+#about {
   background: #ffffff;
   border-block: 1px solid rgba(70, 43, 22, 0.08);
+  padding: 96px 0;
+}
+
+.about {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   gap: 52px;
   align-items: center;
-  margin: 0 auto;
-  max-width: 1180px;
-  padding: 96px 0;
 }
 
 .about-copy {
@@ -60,10 +64,15 @@
 }
 
 @media (max-width: 768px) {
+  #about {
+    padding: 72px 0;
+  }
+
   .about {
+    width: 100%;
     grid-template-columns: 1fr;
     gap: 24px;
-    padding: 72px 20px;
+    padding: 0 20px;
   }
 
   .about-copy,

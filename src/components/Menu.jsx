@@ -9,7 +9,7 @@ export default function Menu() {
       <h2>Our Flavors</h2>
       <div className="menu-item">
         <div className="menu-image">
-          <img src={mango.src} alt="Mango shaved snow" />
+          <img src={mango.src} alt="Mango shaved snow" width="150" height="150" />
         </div>
         <div className="menu-info">
           <h3>Mango Shaved Snow</h3>
@@ -22,7 +22,7 @@ export default function Menu() {
 
       <div className="menu-item">
         <div className="menu-image">
-          <img src={matcha.src} alt="Matcha shaved snow" />
+          <img src={matcha.src} alt="Matcha shaved snow" width="150" height="150" />
         </div>
         <div className="menu-info">
           <h3>Matcha Shaved Snow</h3>
@@ -35,7 +35,12 @@ export default function Menu() {
 
       <div className="menu-item">
         <div className="menu-image">
-          <img src={strawberries.src} alt="Strawberry shaved snow" />
+          <img
+            src={strawberries.src}
+            alt="Strawberry shaved snow"
+            width="150"
+            height="150"
+          />
         </div>
         <div className="menu-info">
           <h3>Strawberry Shaved Snow</h3>

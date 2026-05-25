@@ -1,5 +1,4 @@
 import { useState } from "react";
-import businessInfo from "../data/businessInfo";
 import "../styles/Navbar.css";
 
 function Navbar() {
@@ -8,15 +7,28 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="container navbar-content">
-        <h1 className="logo">Taiwan Shaved Snow</h1>
+        <a href="/" className="logo" aria-label="Taiwan Shaved Snow home">
+          Taiwan Shaved Snow
+        </a>
 
-        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className="hamburger"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-controls="primary-navigation"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <nav
+          id="primary-navigation"
+          className={`nav-links ${menuOpen ? "active" : ""}`}
+          aria-label="Primary navigation"
+        >
           <a href="#about">About</a>
           <a href="#menu">Menu</a>
           <a href="#product">Product</a>

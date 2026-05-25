@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import "../styles/global.css";
+import businessInfo from "../data/businessInfo.js";
 ---
 
 <html lang="en">
@@ -17,9 +18,10 @@ import "../styles/global.css";
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>Taiwan Snow</title>
+    <meta name="description" content={businessInfo.tagline} />
   </head>
   <body>
-    <Navbar />
+    <Navbar client:load />
     <Hero />
     <About />
     <Menu />

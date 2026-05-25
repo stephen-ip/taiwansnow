@@ -1,8 +1,8 @@
-import "../styles/Product.css";
+import "../styles/Offerings.css";
 
-function Product() {
+function Offerings() {
   return (
-    <section id="product" className="section">
+    <section id="offerings" className="section">
       <div className="container">
         <p className="section-kicker">Offerings</p>
         <h2>Fresh snow ice, served your way</h2>
@@ -40,4 +40,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default Offerings;

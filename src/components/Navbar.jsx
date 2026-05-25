@@ -33,7 +33,7 @@ function Navbar() {
         >
           <a href="#about">About</a>
           <a href="#menu">Menu</a>
-          <a href="#product">Offerings</a>
+          <a href="#offerings">Offerings</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>

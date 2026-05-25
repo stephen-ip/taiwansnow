@@ -1,14 +1,14 @@
-#product {
+#offerings {
   background: #f2f8f6;
   padding: 96px 0;
 }
 
-#product .container {
+#offerings .container {
   width: 100%;
   max-width: 1100px;
 }
 
-#product h2 {
+#offerings h2 {
   color: #2d1f16;
   font-size: clamp(2.2rem, 4vw, 4rem);
   font-weight: 900;
@@ -70,11 +70,11 @@
 }
 
 @media (max-width: 768px) {
-  #product {
+  #offerings {
     padding: 72px 0;
   }
 
-  #product h2 {
+  #offerings h2 {
     font-size: 2.3rem;
   }
 

@@ -1,3 +1,5 @@
+import "../styles/Product.css";
+
 function Product() {
   return (
     <section id="product" className="section">

@@ -4,7 +4,7 @@ const businessInfo = {
   description:
     "Founded by three college students, we hope to bring authentic Taiwanese shaved ice to America.",
   email: "taiwanshavedsnow@gmail.com",
-  instagram: "taiwanshavedsnow",
+  instagram: "taiwansnow",
   phone: "(413) 768-7541",
 };
 

@@ -1,0 +1,61 @@
+#contact {
+  background: #6b3a06;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  max-width: 800px;
+}
+
+#contact h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+#contact p {
+  font-family: "Poppins", sans-serif;
+  color: #cfcfcf;
+  font-size: 1.1rem;
+  margin: 14px 0;
+}
+
+#contact a {
+  color: #ffb338;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+#contact a:hover {
+  color: #ffc44d;
+}
+
+@media (max-width: 900px) {
+  #contact h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  #contact h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  #contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}

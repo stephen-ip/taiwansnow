@@ -1,0 +1,74 @@
+#menu {
+  background: linear-gradient(180deg, #fff6e6, #ffe8b8);
+  padding: 0 20px 100px;
+}
+
+#menu h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #5c2e00;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.menu-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.menu-info {
+  max-width: 400px;
+}
+
+.menu-info h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #5c2e00;
+  margin-bottom: 15px;
+}
+
+.menu-info p {
+  font-family: "Poppins", sans-serif;
+  color: #7a3e00;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .menu-info h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .menu-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}

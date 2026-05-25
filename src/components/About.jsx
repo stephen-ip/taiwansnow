@@ -1,4 +1,5 @@
 import businessInfo from "../data/businessInfo";
+import "../styles/About.css";
 
 function About() {
   return (

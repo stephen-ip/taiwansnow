@@ -1,4 +1,5 @@
 import businessInfo from "../data/businessInfo";
+import "../styles/Footer.css";
 
 function Footer() {
   return (
